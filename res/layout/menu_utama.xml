@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern_wallpaper"
+    android:orientation="vertical" >
+    
+        <LinearLayout android:id="@+id/panelIconLeft"
+        	android:layout_width="wrap_content"
+        	android:layout_height="60dip"
+        	android:layout_alignParentLeft="true"
+        	android:background="@drawable/menubar">
+        
+        <Button android:id="@+id/back"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:background="@drawable/back"
+            android:text="  Kembali"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFF"
+            android:typeface="serif"
+            android:textSize="10sp"/>
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#FFF"
+            android:textSize="28sp"
+            android:text="MENU USER" />
+        
+        <Button android:id="@+id/petunjuk"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/info"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="30dp"/>
+        
+        </LinearLayout>
+  
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"          
+            android:orientation="vertical" 
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lomba_kuliner2"
+                android:gravity="center" 
+                />
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5"       
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        
+         <Button
+             android:id="@+id/kategori"
+             android:layout_width="match_parent"
+             android:layout_height="120dp"
+             android:drawableLeft="@drawable/button_area"
+             android:layout_marginTop="5dp"
+             android:layout_marginBottom="30dp"
+             android:text="KATEGORI"
+             android:textSize="16dp"
+             android:typeface="serif" />
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="150dp"
+             android:layout_weight="5"
+             android:orientation="horizontal" >
+
+             <Button
+                 android:id="@+id/peta"
+                 style="@style/Area"
+                 android:layout_marginRight="10dp"   
+                 android:drawableTop="@drawable/button_peta"
+                 android:text="LOKASI" />
+
+             <Button
+                 android:id="@+id/pencarian"
+                 style="@style/Area"
+                 android:drawableTop="@drawable/button_cari"
+                 android:text="PENCARIAN" />
+
+         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_weight="5"
+            android:layout_marginTop="20dp"           
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/lokasiterdekat"
+                style="@style/Area"
+                android:layout_marginRight="10dp"
+                android:drawableTop="@drawable/mapicon"
+                android:text="JARAK" />
+
+            <Button
+                android:id="@+id/tentang"
+                style="@style/Area"
+                android:drawableTop="@drawable/button_petunjuk"
+                android:text="TENTANG" />
+
+        </LinearLayout>
+             
+    	</LinearLayout>
+     	</LinearLayout>
+    </ScrollView>
+</LinearLayout>

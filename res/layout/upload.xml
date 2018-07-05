@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <EditText 
+        android:id="@+id/editNama"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"/>
+    <TextView
+            android:id="@+id/txtStatusGambar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Gambar Belum Dipilih" >
+    </TextView>
+    <LinearLayout
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal"
+        	android:layout_gravity="center_horizontal"
+        	android:padding="6dp" >
+    <Button
+            android:id="@+id/btnChooseImage"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_button"
+            android:text="Pilih Gambar" >
+    </Button>
+    
+    <Button
+            android:id="@+id/btnAddImage"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_button"
+            android:text="Simpan Gambar" >
+    </Button>    
+    </LinearLayout>
+</LinearLayout>

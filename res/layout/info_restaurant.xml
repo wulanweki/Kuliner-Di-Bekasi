@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2" >
+	
+	<TextView
+	    android:id="@+id/namaTempatMakan"
+	    android:layout_width="400dp"
+	    android:layout_height="40dp"
+	    android:layout_marginTop="20dp"
+	    android:background="@drawable/text_input"
+	    android:text="Nama Tempat makan"
+	    android:textSize="20sp"/>
+	
+	<TextView
+	    android:id="@+id/alamatTempatMakan"
+	    android:layout_width="400dp"
+	    android:layout_height="60dp"
+	    android:layout_marginTop="80dp"
+	    android:background="@drawable/text_input"
+	    android:text="Alamat Tempat makan"
+	    android:textSize="16sp" />
+
+	<Button
+	    android:id="@+id/btnArah"
+	    android:layout_width="230dp"
+	    android:layout_height="50dp"
+	    android:layout_below="@+id/alamatTempatMakan"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="121dp"
+	    android:background="#009f00"
+	    android:text="ARAHKAN"
+	    android:textColor="#ffffff" />
+	
+</RelativeLayout>

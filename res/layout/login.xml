@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical" >
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+        <LinearLayout android:id="@+id/panelIconLeft"
+        	android:layout_width="wrap_content"
+        	android:layout_height="60dip"
+        	android:layout_alignParentLeft="true"
+        	android:background="@drawable/menubar">
+        
+        <Button android:id="@+id/back"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:background="@drawable/back"
+            android:text="Kembali"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFF"
+            android:typeface="serif"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FFF"
+            android:typeface="serif"
+            android:textSize="28sp"
+            android:text="LOGIN ADMIN" />
+
+    </LinearLayout>
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textColor="#000"
+            	android:typeface="serif"
+            	android:textSize="22sp"
+                android:text="Username" />
+            
+            <EditText
+	    		android:id="@+id/username"
+	    		android:layout_width="fill_parent"
+        		android:layout_height="50dp"
+        		android:layout_marginTop="10dp"
+        		android:layout_marginBottom="20dp"
+        		android:background="@drawable/text_input"
+        		android:hint="Username" />
+            
+             <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="#000"
+            	android:typeface="serif"
+            	android:textSize="22sp"
+                android:text="Password" />
+            
+			<EditText
+	    		android:id="@+id/password"
+	    		android:layout_width="fill_parent"
+        		android:layout_height="50dp"
+        		android:layout_marginBottom="50dp"
+        		android:layout_marginTop="10dp"
+        		android:inputType="textPassword"
+        		android:background="@drawable/text_input"
+        		android:hint="Password" />
+			
+   			<Button 
+        		android:id="@+id/login"
+        		android:layout_width="200dp"
+    	    	android:layout_height="50dp"
+    	    	android:layout_gravity="center"
+    	    	android:layout_marginBottom="50dp"
+        		android:background="@drawable/btn_button"
+        		android:text="Masuk"/>
+   			
+   			</LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

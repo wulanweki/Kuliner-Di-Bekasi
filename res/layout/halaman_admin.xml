@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:id="@+id/panelIconLeft"
+        	android:layout_width="wrap_content"
+        	android:layout_height="60dip"
+        	android:layout_alignParentLeft="true"
+        	android:background="@drawable/menubar">
+        
+        <Button android:id="@+id/logout"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:background="@drawable/logout_icon"           
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"/>
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="#FFF"
+            android:textSize="28sp"
+            android:text="MENU PILIHAN" />
+        
+        </LinearLayout>
+        
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"          
+            android:orientation="vertical" 
+            android:padding="10dp">
+
+    		<Button
+    		    android:id="@+id/btnLihat"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="100dp"
+    		    android:layout_marginTop="15dip"
+    		    android:background="#009f00"
+    		    android:text="EDIT INFORMASI"
+    		    android:drawableLeft="@drawable/ubah"
+    		    android:textColor="#ffffff"
+    		    android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/btnTambah"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dip"
+                android:background="#009f00"
+                android:text="TAMBAH INFORMASI"
+                android:drawableLeft="@drawable/add"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+            
+            <Button
+                android:id="@+id/btnUpload"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dip"
+                android:background="#009f00"
+                android:text="MASUKAN GAMBAR"
+                android:drawableLeft="@drawable/camera"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+            
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

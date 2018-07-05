@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3b3b3b" >
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/menubar"
+            android:gravity="center"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:src="@drawable/wallpaper_tile" />
+          
+        </LinearLayout>
+       
+	<LinearLayout  
+    	android:id="@+id/linearLayout1"
+    	android:layout_width="match_parent"
+    	android:layout_height="200dp"
+    	android:layout_marginTop="20dp"
+    	android:layout_below="@id/header"
+    	android:background="@drawable/background2"
+    	android:orientation="vertical"
+    	android:padding="10dip" >
+
+    	<TextView
+        	android:id="@+id/textView2"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:text="Masuk Sebagai ?"
+        	android:textSize="20sp"
+        	android:textStyle="bold"/>
+
+    		<Button
+        		android:id="@+id/adminButton"
+        		android:layout_width="250dp"
+        		android:layout_height="50dp"
+        		android:background="#009f00"
+        		android:drawableLeft="@drawable/forgot"
+        		android:text="ADMIN"
+        		android:layout_gravity="center"
+        		android:textColor="#ffffff"
+        		android:textSize="20sp"
+        		android:layout_marginTop="20dp"/>
+    
+    		<Button
+        		android:id="@+id/userButton"
+        		android:layout_width="250dp"
+        		android:layout_height="50dp"
+        		android:background="#009f00"
+        		android:text="PENGGUNA APLIKASI"
+        		android:drawableLeft="@drawable/admin"
+        		android:layout_gravity="center"
+        		android:textColor="#ffffff"
+        		android:textSize="20sp"
+        		android:layout_marginTop="20dp" />
+
+	</LinearLayout>
+
+			<Button
+    			android:id="@+id/button1"
+    			android:layout_width="140dp"
+    			android:layout_height="50dp"
+    			android:background="@drawable/transparan1"
+    			android:drawableLeft="@drawable/exit"
+    			android:layout_marginTop="490dp"
+    			android:onClick="keluar"
+    			android:textColor="#ffffff"
+    			android:text="KELUAR" />
+
+	</RelativeLayout>
+</ScrollView>

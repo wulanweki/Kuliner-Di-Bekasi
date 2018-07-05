@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3b3b3b"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/tabSearch">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="NAMA TEMPAT KULINER"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <AutoCompleteTextView
+        android:id="@+id/searchAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="15"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:completionThreshold="1"
+        android:layout_marginRight="7dp" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="TIPE KULINER"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+
+    <Spinner
+        android:id="@+id/cariSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#aabbcc"
+        tools:listitem="@android:layout/simple_spinner_item" />
+
+    <Button
+        android:id="@+id/buttonCari"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="#009f00"
+        android:drawableLeft="@drawable/search"
+        android:text="CARI"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+    
+</LinearLayout>

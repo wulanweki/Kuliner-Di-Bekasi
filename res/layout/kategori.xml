@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/i"
+    android:orientation="vertical" >
+    
+    	<LinearLayout android:id="@+id/panelIconLeft"
+        	android:layout_width="wrap_content"
+        	android:layout_height="60dip"
+        	android:layout_alignParentLeft="true"
+        	android:background="@drawable/menubar">
+        
+        <Button android:id="@+id/back"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:background="@drawable/back"
+            android:text="  Kembali"
+            android:layout_marginTop="5dp"
+            android:textColor="#FFF"
+            android:typeface="serif"
+            android:textSize="10sp"/>
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#FFF"
+            android:textSize="28sp"
+            android:text="KATEGORI" />
+        
+        </LinearLayout>
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"          
+            android:orientation="vertical" >
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5"       
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="6dip" >
+
+             <Button
+                 android:id="@+id/indonesia"
+                 android:layout_width="fill_parent"
+                 android:layout_height="110dp"
+                 android:background="#B22222"
+                 android:drawableLeft="@drawable/indo"
+                 android:text="RESTORAN INDONESIA"
+                 android:textColor="#FFF" />
+        
+             <Button
+                 android:id="@+id/barat"
+                 android:layout_width="fill_parent"
+                 android:layout_height="110dp"
+                 android:layout_marginTop="20dp"
+                 android:background="#1E90FF"
+                 android:drawableLeft="@drawable/barat"
+                 android:text="RESTORAN BARAT"
+                 android:textColor="#FFF" />
+        
+             <Button
+                 android:id="@+id/oriental"
+                 android:layout_width="fill_parent"
+                 android:layout_height="110dp"
+                 android:layout_marginTop="20dp"
+                 android:background="#009f00"
+                 android:drawableLeft="@drawable/oriental"
+                 android:textColor="#FFF"
+                 android:text="RESTORAN ORIENTAL" />
+       
+             <Button
+                 android:id="@+id/fastfood"
+                 android:layout_width="fill_parent"
+                 android:layout_height="110dp"
+                 android:layout_marginTop="20dp"
+                 android:background="#FF6347"
+                 android:drawableLeft="@drawable/fastfood"
+                 android:text="RESTORAN CEPAT SAJI"
+                 android:textColor="#FFF" />
+         
+    	</LinearLayout>    
+     	</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

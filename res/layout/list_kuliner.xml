@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical" >
+   
+         <LinearLayout android:id="@+id/panelIconLeft"
+        	android:layout_width="wrap_content"
+        	android:layout_height="60dip"
+        	android:layout_alignParentLeft="true"
+        	android:background="@drawable/menubar">
+         
+         <Button android:id="@+id/back"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:background="@drawable/back"
+            android:text="  Kembali"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFF"
+            android:typeface="serif"
+            android:textSize="10sp"/>
+         
+         <TextView  
+            android:id="@+id/update"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#070707"
+            android:textSize="12sp" />
+         
+         <Button android:id="@+id/refresh"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:background="@drawable/ic_menu_refresh"
+        	android:title="Refresh"
+        	android:showAsAction="ifRoom|withText" 
+        	android:layout_marginTop="10dp"
+            android:layout_marginLeft="3dp"/>
+         
+         </LinearLayout>
+         
+         <View
+			android:layout_height="5dp"
+			android:layout_width="fill_parent"
+			android:background="#009f00" />
+    
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#f5f2f2"
+        android:dividerHeight="1dp" />
+    
+ </LinearLayout>
